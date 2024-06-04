@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Contact form</title>
 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="contact-form-container">
+        <h1>Contact Us</h1>
 
-  <div class="contact-form_container">
+        <form action="">
+          <div class="names">
+            <div class="form-field">
+              <label for="first_name"> First Name </label>
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+            <div class="form-field">
+              <label for="last_name"> Last Name </label>
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+          </div>
+          <div class="email">
+            <div class="form-field">
+              <label for="email"> Email Address </label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="query-type">
+            <div class="form-field">
+              <label for="query_type"> Query Type </label>
+              <div class="radio-group">
+                <div class="radio-container">
+                  <input
+                    type="radio"
+                    id="general_enquiry"
+                    name="query_type"
+                    value="general_enquiry"
+                  />
+                  <label for="general_enquiry">General Enquiry</label>
+                </div>
+                <div class="radio-container">
+                  <input
+                    type="radio"
+                    id="support_request"
+                    name="query_type"
+                    value="support_request"
+                  />
+                  <label for="support_request">Support Request</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
 
-  
+        This field is required Last Name This field is required Email Address
+        Please enter a valid email address This field is required Query Type
+        General Enquiry Support Request Please select a query type Message This
+        field is required I consent to being contacted by the team To submit
+        this form, please consent to being contacted
 
-  <h1>Contact Us</h1> 
+        <button>Submit</button>
+      </div>
+    </main>
 
-  <form action="">
-    <label for=""></label>
+    Message Sent! Thanks for completing the form. We'll be in touch soon!
 
-  </form>
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-</div>
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
