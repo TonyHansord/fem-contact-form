@@ -46,24 +46,23 @@
             <div class="form-field">
               <label for="query_type" class="field-label"> Query Type </label>
               <div class="radio-group">
-                <div class="radio-container">
-                  <input
+                <label for="general_enquiry" class="is-checked"
+                  ><input
                     type="radio"
                     id="general_enquiry"
                     name="query_type"
                     value="general_enquiry"
-                  />
-                  <label for="general_enquiry">General Enquiry</label>
-                </div>
-                <div class="radio-container">
-                  <input
+                  />General Enquiry</label
+                >
+
+                <label for="support_request"
+                  ><input
                     type="radio"
                     id="support_request"
                     name="query_type"
                     value="support_request"
-                  />
-                  <label for="support_request">Support Request</label>
-                </div>
+                  />Support Request</label
+                >
               </div>
               <p class="error-message">Please select a query type</p>
             </div>
@@ -99,7 +98,7 @@
       </div>
     </main>
 
-    <div class="modal">
+    <div class="modal hidden">
       <div class="modal-content">
         <div class="modal-title">
           <img src="assets/images/icon-success-check.svg" alt="" />
