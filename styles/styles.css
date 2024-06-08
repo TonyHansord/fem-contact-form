@@ -132,7 +132,6 @@ label {
 }
 
 .error-message {
-  visibility: hidden;
   color: var(--error-color);
   font-size: 0.7em;
   font-weight: 300;
@@ -210,7 +209,7 @@ button:hover {
 }
 
 .hidden {
-  display: none;
+ visibility: hidden;
 }
 
 .modal-title {
