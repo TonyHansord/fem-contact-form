@@ -26,20 +26,20 @@
           <div class="names">
             <div class="form-field">
               <label for="first_name" class="field-label"> First Name </label>
-              <input type="text" id="first_name" name="first_name" required />
-              <p class="error-message hidden">This field is required</p>
+              <input type="text" id="first_name" name="first_name" required aria-required="true"/>
+              <p role="alert" class="error-message hidden">This field is required</p>
             </div>
             <div class="form-field">
               <label for="last_name" class="field-label"> Last Name </label>
-              <input type="text" id="first_name" name="first_name" required />
-              <p class="error-message hidden">This field is required</p>
+              <input type="text" id="last_name" name="last_name" required aria-required="true"/>
+              <p role="alert" class="error-message hidden">This field is required</p>
             </div>
           </div>
           <div class="email">
             <div class="form-field">
               <label for="email" class="field-label"> Email Address </label>
               <input type="email" id="email" name="email" required />
-              <p class="error-message hidden">
+              <p role="alert" class="error-message hidden">
                 Please enter a valid email address
               </p>
             </div>
@@ -54,6 +54,7 @@
                     id="general_enquiry"
                     name="query_type"
                     value="general_enquiry"
+                    aria-required="true"
                     required
                   />General Enquiry</label
                 >
@@ -67,14 +68,14 @@
                   />Support Request</label
                 >
               </div>
-              <p class="error-message hidden">Please select a query type</p>
+              <p role="alert" class="error-message hidden">Please select a query type</p>
             </div>
           </div>
           <div class="message">
             <div class="form-field">
               <label for="message" class="field-label"> Message </label>
               <textarea id="message" name="message" required></textarea>
-              <p class="error-message hidden">This field is required</p>
+              <p role="alert" class="error-message hidden">This field is required</p>
             </div>
           </div>
 
@@ -91,7 +92,7 @@
                 I consent to being contacted by the team
               </label>
             </div>
-            <p class="error-message hidden">
+            <p role="alert" class="error-message hidden">
               To submit this form, please consent to being contacted
             </p>
           </div>
